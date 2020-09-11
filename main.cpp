@@ -53,7 +53,7 @@ int main()
     //コンソールに表示
     pc.printf("count:%d\n", count);
     
-    //ハウジング対策: 10～50 msec の遅延
+    //チャタリング対策: 10～50 msec の遅延
     wait_ms(50); 
   }
 }
