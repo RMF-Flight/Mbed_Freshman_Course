@@ -1,5 +1,4 @@
 #include "Servo.h"
-#include "mbed.h"
 
 Servo::Servo(PinName pin) : _servo(pin) {
     _servo.pulsewidth(0);     // パルス幅を0で初期化
