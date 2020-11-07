@@ -15,6 +15,15 @@
 const int  MPU6050_ADDR = 0xD0;//MPU6050用(ADOピンをGNDに接続) 0xD0 = 0x68 << 1
 //const int MPU6050_ADDR = 0xD1;//MPU6050用(ADOピンを3V3に接続) 0xD2 = 0x69 << 1
 
+//センサのレジスタのアドレスを定義しておく
+const int ACCEL_XOUT_H = 0x3B;//加速度X軸上位8bit
+const int ACCEL_XOUT_L = 0x3C;//加速度X軸下位8bit
+const int ACCEL_YOUT_H = 0x3D;//加速度X軸上位8bit
+const int ACCEL_YOUT_L = 0x3E;//加速度X軸下位8bit
+const int ACCEL_ZOUT_H = 0x3F;//加速度X軸上位8bit
+const int ACCEL_ZOUT_L = 0x40;//加速度X軸下位8bit
+
+
 //I2C（センサとの通信）の初期化
 I2C i2c(I2C_SDA,I2C_SCL);
 
@@ -50,6 +59,8 @@ unsigned char readOneByte(unsigned char dAddr,unsigned char rAddr){
     //結果を返す
     return buf[0];
 }
+
+
 
 
 
