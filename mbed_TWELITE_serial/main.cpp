@@ -7,7 +7,7 @@ int i = 0;
 void tweTransmit(int i){
         twe.printf("%d\n", i);
 }
-
+//test
 int main(){
     twe.baud(115200);   //TWELITEとNUCLEOの通信のbaudrateを115200bpsに設定
     twe.printf("Start!\n\n");
