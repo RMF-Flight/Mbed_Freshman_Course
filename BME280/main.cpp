@@ -3,7 +3,6 @@
 #include <math.h>           //距離を求める際に逆三角関数を使うため必要
 #include "mbed.h"
 #include "BME280.h"
-Serial pc(USBTX, USBRX, 115200);
 BME280 sensor(D4, D5);
 
 int main(){
