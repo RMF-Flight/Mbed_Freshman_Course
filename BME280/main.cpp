@@ -4,7 +4,7 @@
 #include "mbed.h"
 #include "BME280.h"
 BME280 sensor(D4, D5);
-
+Serial pc(USBTX, USBRX, 115200);
 int main(){
     printf("\nSTM32 ADC internal channels reading example\n");
     while(1) {
